@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title> RESUME</title>
+    <link rel="stylesheet" href="styleresume.css"  type="text/css">
+    <script src="https://kit.fontawesome.com/2d67bf8f0f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="navbar">
+       <ul class="unorderlist">
+        <li> <a href="#">Home</a></li>
+        <li><a href="#profilepic">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <!--li><a href="#Experience">Experience </a></li-->
+        <li><a href="#education">Education</a></li>
+        <li><a href="#portfolio">Portfolio </a></li>
+        <li><a href="#contact">Contact</a></li>
+   </ul>
+        </div>
+   <header id="header"> 
+        <div class="name-social-container">
+            <div style="text-align: center;"> 
+                <h1 id="myname"> Gaurav Kumar</h1>
+            </div>
+            <div>
+                <ul>
+                <li><a href=""><i class="fa-brands fa-facebook" style="color: #ffffff;"></i></a></li>
+                <li><a href="https://www.instagram.com/yashswag22/?hl=en"><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></a></li>
+                <li><a href="https://linkedin.com/in/gaurav-kumar-7995b5236" target="_blank"><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a></li>
+                <li><a href="https://github.com/yashswag22" target="__blank"><i class="fa-brands fa-github" style="color: #ffffff;"></i></a></li>
+                <li><a href="mailto:iamzaalim00@gmail.com" target="__blank"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i></a></li>
+                </ul>
+             </div>
+        </div>
+        </header>
+        <main>
+        <section id="About">
+            <div id="profilepic">
+                <img src="profilepic1.jpg" onload="typeWriter()">
+            </div>
+            <div id="abouttext">
+                <div id="typewriter">
+                   
+
+                    <p id="demo"></p>
+                    
+                    <script>
+                    var i = 0;
+                    var txt = "Welcome to my website! I'm a passionate and driven student pursuing a B.Tech degree, with expertise in web development, DSA, competitive programming, and hackathons. My journey has equipped me with a solid foundation in these domains. I love crafting user-friendly interfaces and implementing robust back-end functionality, pushing the boundaries of what's possible. My problem-solving skills, honed through DSA and competitive programming, enable me to tackle complex challenges. I thrive in collaborative environments and have gained hands-on experience through diverse projects. I continuously learn and stay up to date with emerging technologies. This website is a platform for sharing my knowledge, experiences, and projects, inspiring and connecting with like-minded individuals. Let's collaborate and explore the fascinating world of technology together! ";
+                    var speed = 20;
+                    
+                    function typeWriter() {
+                      if (i < txt.length) {
+                        document.getElementById("demo").innerHTML += txt.charAt(i);
+                        i++;
+                        setTimeout(typeWriter, speed);
+                      }
+                    }
+                    </script>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <h1 class="section-heading mb75px">
+                <span>
+                    <i class="fa-solid fa-chalkboard-user"></i>
+                </span>
+                <span>SKILLS</span>
+            </h1>
+         <div id="skilldisplay">
+                <!--div id="skillsubdisplay"-->
+             <div class="skill-progress">
+                <div class="eighty-five-percent mb75px">
+                    <div class="skill-name">
+                        <span>C++</span></div>
+                </div>
+             </div>
+             <div class="skill-progress">
+                <div class="eighty-five-percent mb75px html">
+                    <div class="skill-name">
+                        HTML
+                    </div>
+                </div>
+             </div>
+             <div class="skill-progress"><div class="eighty-five-percent mb75px css"><div class="skill-name">CSS</div></div></div>
+                
+             <!--div id="skillsubdisplay"-->
+             <div class="skill-progress"><div class="eighty-five-percent mb75px cp"><div class="skill-name">CP</div></div></div>
+             <div class="skill-progress"><div class="eighty-five-percent mb75px python"><div class="skill-name">Python</div></div></div>
+             <div class="skill-progress"><div class="eighty-five-percent mb75px dsa"><div class="skill-name">DSA</div></div></div>
+            
+             <!--div class="skill-progress"><div class="eighty-five-percent mb75px html"><div class="skill-name">JavaScript</div></div></div-->
+         </div>
+       </section>
+        <!--section id="experience"> </section-->
+        <section id="education"> 
+            <h1 class="section-heading mb75px">
+                <span>
+                    <i class="fa-solid fa-graduation-cap"></i>
+                </span>
+                <span>EDUCATION</span>
+            </h1>
+            <div id="education-display">
+                <div class="education-box">
+                    <div id="education-heading" >
+                        Secondary Education
+                    </div>
+                    <div id="education-details">
+                        D.A.V Jamalpur<br>
+                        2018
+                    </div>
+                </div>
+                <div class="education-box">
+                    <div id="education-heading" >
+                        Higher Secondary Education
+                    </div>
+                    <div id="education-details">
+                       International College Ghosaith<br>
+                        2020
+                    </div>
+                </div>
+                <div class="education-box">
+                    <div id="education-heading" >
+                        Bachelor of Technology
+                    </div>
+                    <div id="education-details" class="iem">
+                         Institute of Engineering & Management Kolkata<br>
+                         2025
+                     </div>
+                </div>
+                <div id="line-track">
+                    <div id="traveler">
+                        <i class="fa-solid fa-jet-fighter"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio"> 
+            <h1 class="section-heading mb75px">
+                <span>
+                    <i class="fa-solid fa-tv"></i>
+                </span>
+                <span >Portfolio</span>
+            </h1>
+            <div id="portfolio-display">
+               <div id="comming">
+                 comming soon...
+               </div>
+            </div>
+        </section-->
+        <section id="contact">
+            <h1 class="section-heading mb75px">
+                <span>
+                    <i class="fa-regular fa-id-card"></i>
+                </span>
+                <span >Contact</span>
+            </h1>
+
+            <div id="contactdisplay">
+            <div id="form">
+                <form id="contact-form">
+            <input type="text" id="input-name" name="name" required placeholder="Your Name">
+            <input type="email" id="input-email" name="input-email" required placeholder="Your Email">
+            <textarea  id="intput-message" name="input-message" placeholder="Message" rows="2" cols="40"></textarea>
+            <button class="sub-btn" type="submit">SEND MESSAGE </button>
+            </div>
+            <div id="address">
+                this is for address
+            </div>
+        </div>
+        <div id="footer">
+            <ul>
+                <li><a href=""><img src="logo\asset_0000000000000015_1549330433_linkedin-logo.png"></a></li>
+                <li><a href=""><img src="logo\asset_0000000000000022_1549822879_stackoverflow-logo.png"></a></li>
+                <li><a href=""><img src="logo\fb.png"></a></li>
+                <li><a href=""><img src="logo\google.png"></a></li>
+                <li><a href=""><img src="logo\quora.png"></a></li>
+                </ul>
+            </div>
+        </section>
+        
+        </main>
+    </body>
+</html>
