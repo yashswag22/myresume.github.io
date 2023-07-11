@@ -307,6 +307,23 @@ border-bottom-left-radius: .7rem;
     top:20%;
 }
 
+
+#line-track{
+    position:absolute;
+    height: 65%;
+    width: 0;
+    top:9%;
+    border: 2px dotted blue;
+    left: 50%;
+}
+
+#traveler {
+    position:sticky;
+    transform: rotate(90deg);
+    margin-left:-5px;
+    margin-top:-30px;
+    top:20%;
+}
 @media screen and (max-width : 700px ) {
     #line-track{
        left: 95% !important;
@@ -330,26 +347,7 @@ border-bottom-left-radius: .7rem;
         width: 95%;
     }
 
-  
 
-   
-    
-}
-#line-track{
-    position:absolute;
-    height: 65%;
-    width: 0;
-    top:9%;
-    border: 2px dotted blue;
-    left: 50%;
-}
-
-#traveler {
-    position:sticky;
-    transform: rotate(90deg);
-    margin-left:-5px;
-    margin-top:-30px;
-    top:20%;
 }
 
 /*********** Portfolio ********/
