@@ -257,8 +257,8 @@ border-bottom-left-radius: .7rem;
 #education-display{
     position: relative;
     width: 70%;
-    /*border: 2px solid black;*/
-    margin-bottom:5%;
+   /* border: 2px solid black;
+*/    margin-bottom:5%;
 }
 .education-box{
     position:relative;
@@ -266,7 +266,7 @@ border-bottom-left-radius: .7rem;
     width: 40%;
     left:5%; 
     min-height: 150px;
-  /*  border: 2px solid black;*/
+   /* border: 2px solid black; */
    
 }
 #education-heading{
@@ -303,8 +303,37 @@ border-bottom-left-radius: .7rem;
     height: 10px;
     background-color: red;
     border-radius: 50%;
-    left:-9.5%;
+    left:-10%;
     top:20%;
+}
+
+@media screen and (max-width : 700px ) {
+    #line-track{
+       left: 95% !important;
+    }
+   .education-box:nth-child(2n+1){
+        right: 0%;
+        width: 80%;
+        left: 5%;
+    }
+    .education-box:nth-child(2n){
+        right: 0%;
+        width: 80%;
+        left: 5%;
+    }
+    .education-box:nth-child(2n)::after{
+        left: 109.5% !important;
+    }
+ 
+
+    #education-display{
+        width: 95%;
+    }
+
+  
+
+   
+    
 }
 #line-track{
     position:absolute;
