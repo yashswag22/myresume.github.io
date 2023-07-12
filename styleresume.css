@@ -2,6 +2,9 @@ body{
     margin:0px;
     padding: 0;
 }
+body::-webkit-scrollbar { 
+    display: none; 
+}
 .navbar{
     
    border-bottom: 2px solid rgb(49, 43, 43);
@@ -11,17 +14,111 @@ body{
     width: 100%;
    z-index: 1;
    transition: 1s ease-in-out ;
+   background-color: #201b1b;
 }
+@media screen and (min-width:550px) {
+    #navdummy{
+        height: 0;
+        width: 0;
+        position: fixed;
+        top:0;
+        left:0;
+        overflow:hidden;
+    }
+}
+@media screen and (max-width:550px) {
+    
+    #navdummy{
+        height: 30px;
+        position: fixed;
+        top: 0%;
+        width: 100%;
+        z-index: 1;
+         background-color:#201b1b;
+        text-align: right;
+        /*background-image: url("headerpic.jpg");
+        background-size:cover;*/
+       
+    }
+    #menuubar{
+       /* margin-left: 90%;*/
+       margin-top:5px;
+    }
+    #navdummy a i{
+        display: inline-block;
+        margin-left: 2%;
+       /*  margin-bottom: 10%;
+         text-shadow: 5px 1px rgb(104, 12, 243) ;
+       font-size: large;
+       border-radius: 50%;
+       border: 2px solid rgb(16, 0, 233);*/
+       
+       
+    }
+    #navdummy a {
+        color:   white;
+       
+    }
+   #navdummy a :active{
+        transform: rotate(180deg);
+    }
+    .navbar {
+        height: 0;
+        width: 0;
+        position: fixed;
+        top:0;
+        left:0;
+        overflow:hidden;
+       /* transition: all 2s ease-in-out;*/
+       transition: none;
+       
+    }
+    .navbar .unorderlist li{
+        display: block;
+        font-size: medium;
+    }
 
+    #opennavbar:target{
+        
+        top: 30px;
+        width: 20%;
+        height: auto;
+        margin-left: 80%;
+        background-color: rgb(16, 15, 15);
+      
+    }
+    
+    #closenevbar:target{
+        height: 0;
+        width: 0;
+        position: fixed;
+        top:0;
+        left:0;
+        overflow:hidden;
+    }
+
+  
+    
+}
 .navbar:hover{
-    border-bottom: 2px solid rgb(49, 43, 43);
+   /* border-bottom: 2px solid rgb(49, 43, 43);
    box-shadow: 0px 2px 20px 1px;
     position: fixed;
     top: 0%;
     width: 100%;
-   z-index: 1;
+   z-index: 1;*/
+  
   background-color: #201b1b;
   
+}
+
+@media  screen and (max-width:450px) {
+    #header{
+        height: 55vh !important;
+    }
+    #myname{
+       font-size: 200%;
+    }
 }
 #header{ 
     
@@ -65,7 +162,8 @@ section{
     
     flex-direction: column;
     align-items: center;
-    
+   /* margin-right: 0 !important;
+    padding-right: 0 !important;*/
 }
 .section-heading{
     width: auto;
@@ -166,7 +264,7 @@ padding: 0px;
     
 }
 button{
-    rgba(0,0,0,0.9);
+    color:rgba(0,0,0,0.9);
 }
 
 /*#About #abouttext span{
@@ -307,24 +405,7 @@ border-bottom-left-radius: .7rem;
     top:20%;
 }
 
-
-#line-track{
-    position:absolute;
-    height: 65%;
-    width: 0;
-    top:9%;
-    border: 2px dotted blue;
-    left: 50%;
-}
-
-#traveler {
-    position:sticky;
-    transform: rotate(90deg);
-    margin-left:-5px;
-    margin-top:-30px;
-    top:20%;
-}
-@media screen and (max-width : 700px ) {
+@media screen and (max-width : 931px ) {
     #line-track{
        left: 95% !important;
     }
@@ -346,8 +427,27 @@ border-bottom-left-radius: .7rem;
     #education-display{
         width: 95%;
     }
+    
+  
 
+   
+    
+}
+#line-track{
+    position:absolute;
+    height: 65%;
+    width: 0;
+    top:9%;
+    border: 2px dashed blue;
+    left: 50%;
+}
 
+#traveler {
+    position:sticky;
+    transform: rotate(90deg);
+    margin-left:-5px;
+    margin-top:-30px;
+    top:20%;
 }
 
 /*********** Portfolio ********/
@@ -375,8 +475,9 @@ border-bottom-left-radius: .7rem;
     background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
     color: white;
     padding-bottom: 40px;
-    padding-left: 5%;
-    padding-right: 5%;
+    /*padding-left: 5%;
+    padding-right: 5%;*/
+    
  }
  #contact h1 span{
     color: white;
