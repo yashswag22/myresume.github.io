@@ -588,7 +588,7 @@ button:focus{
         font-size:medium;
         text-decoration: none;
         padding-top: auto;
-       
+       display:block;
     } 
     .dropdown-content a:hover{
         color: #2857a4;
