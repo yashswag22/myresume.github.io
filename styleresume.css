@@ -5,6 +5,8 @@ body{
 body::-webkit-scrollbar { 
     display: none; 
 }
+
+
 .navbar{
     
    border-bottom: 2px solid rgb(49, 43, 43);
@@ -16,6 +18,9 @@ body::-webkit-scrollbar {
    transition: 1s ease-in-out ;
    background-color: #201b1b;
 }
+
+
+
 @media screen and (min-width:550px) {
     #navdummy{
         height: 0;
@@ -120,6 +125,8 @@ body::-webkit-scrollbar {
        font-size: 200%;
     }
 }
+
+
 #header{ 
     
     height: 65vh;
@@ -452,23 +459,102 @@ border-bottom-left-radius: .7rem;
 
 /*********** Portfolio ********/
 #portfolio-display{
-    width: 70%;
+    /* width: 70%;
     height: 65vh;
     border: 2px solid rgb(190, 28, 219);
   margin-bottom: 5%;
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  justify-content: center;
-     align-items: center;
+  justify-content: center; */
+     /* align-items: center;
      box-shadow: 2px -2px 5px;
+
+     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly; */
+    /* max-height: 65vh; */
+    
+    display: flex;
+    gap: 10px;
+    justify-content:space-around;
+    padding: 20px;
+    /* border:2px solid black; */
+    margin-bottom: 20px;
 }
-#comming{
+
+#portfolio-display a {
+    text-decoration: none;
+}
+
+.project {
+    /* height: 100%
+    width: 50%;
+    /* position: relative; */
+   /* overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid blue;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s; */
+    /* flex: 1 1 calc(33.333% - 20px);Adjust to fit three images per row with space */
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    border:2px solid black;
+    min-height: 90%;
+    min-width: 45vw;
+    max-width: 45vw;
+    
+}
+
+.project-title{
+  text-align: center;
+   margin-top: 10px;
+   margin-bottom: 15px;
+}
+
+.project img {
+    max-width: 100%;
+    min-height: 100%;
+    display: block;
+    transition: transform 0.3s;
+}
+
+
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.project:hover img {
+    transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+    #portfolio-display {
+        flex-direction: column;
+        align-items: center;
+        max-width: 90vw;
+        min-width: 90vw;
+    }
+
+    .project {
+        flex: 1 1 100%; /* Full width for mobile view */
+        margin-bottom: 20px;
+        max-width: 90vw;
+        min-width: 90vw;
+    }
+}
+/* #comming{
     height: 200px;
     width: 800px;
     text-align: center;
     padding-top: 150px;
     font-size: 50px;
-}
+} */
 
  /******* Contact ********/
  #contact {
@@ -550,9 +636,59 @@ button:focus{
 }
 #address{
     width: 50%;
-    border: 2px solid;
+    /* border: 2px solid; */
     margin-left: 10%;
     text-align: center;
+}
+#address {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+#address .box {
+    /* background-color: #fff; */
+    border: 2px solid #dee2e6;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#address .box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+#address .box h4 {
+    margin: 0 0 20px 0;
+    color: #333;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 100;
+    text-decoration: underline;
+}
+
+#address .box a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#address .box a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    #address .box {
+        padding: 20px;
+    }
 }
 
 #footer{
@@ -588,7 +724,7 @@ button:focus{
         font-size:medium;
         text-decoration: none;
         padding-top: auto;
-       display:block;
+       
     } 
     .dropdown-content a:hover{
         color: #2857a4;
